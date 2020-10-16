@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './style/index.scss'
+import Menu from './components/Menu/Menu'
+import MenuItem from './components/Menu/MenuItem'
 
-function App() {
+
+const App=()=>{
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Menu defaultIndex={0}  onSelect={(index)=>{console.log(index)}} mode='horizontal'>
+        <MenuItem index={0}>cool link</MenuItem>
+        <MenuItem index={1}>cool link2</MenuItem>
+        <MenuItem index={2}>cool link3</MenuItem>
+      </Menu>
     </div>
   );
 }

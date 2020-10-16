@@ -1,0 +1,17 @@
+
+// 变量
+@import './variables.scss';
+// reset
+@import './reboot.scss';
+
+
+//mixins
+@import './mixins.scss';
+
+// button样式
+
+@import '../components/Button/style.scss';
+
+//menu样式
+
+@import '../components/Menu/style.scss';
